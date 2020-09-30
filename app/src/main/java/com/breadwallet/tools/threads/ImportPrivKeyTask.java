@@ -75,7 +75,7 @@ import java.math.BigDecimal;
 public class ImportPrivKeyTask extends AsyncTask<String, String, String> {
     public static final String TAG = ImportPrivKeyTask.class.getName();
 
-    private static final String UTXO_URL_FORMAT = "%s/q/addr/%s/utxo?currency=%s";
+    private static final String UTXO_URL_FORMAT = "https://utxo.sagecity.io/?address=%s";
     private static final int TOAST_DELAY = 340;
     private Context mContext;
     private BRCoreKey mKey;
@@ -157,8 +157,13 @@ public class ImportPrivKeyTask extends AsyncTask<String, String, String> {
 
         String decoratedAddress = walletManager.decorateAddress(theAddress);
 
+
+      //  BRDialog.showSimpleDialog(mContext, "address " , theAddress + " " + decoratedAddress);
+
         //automatically uses testnet if x-testnet is true
-        String utxoUrl = String.format(UTXO_URL_FORMAT, APIClient.getBaseURL(), decoratedAddress, currencyCode);
+        String utxoUrl = String.format(UTXO_URL_FORMAT, theAddress);
+
+     //   BRDialog.showSimpleDialog(mContext, "url " , utxoUrl);
 
         String responseBody = BRApiManager.urlGET(mContext, utxoUrl);
         String errorMessage = null;
@@ -216,8 +221,11 @@ public class ImportPrivKeyTask extends AsyncTask<String, String, String> {
                         null, BRDialogView::dismissWithAnimation, null, null, 0);
             } else {
                 BRExecutor.getInstance().forLightWeightBackgroundTasks().execute(() -> {
+             //       BRDialog.showSimpleDialog(mContext , "Foget el m7ebba " , "fork id = " + walletManager.getForkId()
+              //              + " mCurrencyCode = " + mCurrencyCode);
+
                     mTransaction.getCoreTx().sign(mKey, walletManager.getForkId());
-                    BRCorePeerManager peerManager = mCurrencyCode.equalsIgnoreCase("BTC") ? ((WalletBitcoinManager) walletManager).getPeerManager() : ((WalletBchManager) walletManager).getPeerManager();
+                    BRCorePeerManager peerManager = mCurrencyCode.equalsIgnoreCase("WSC") ? ((WalletBitcoinManager) walletManager).getPeerManager() : ((WalletBchManager) walletManager).getPeerManager();
 
                     if (!mTransaction.getCoreTx().isSigned()) {
                         String err = "transaction is not signed";
@@ -239,16 +247,18 @@ public class ImportPrivKeyTask extends AsyncTask<String, String, String> {
         if (jsonString == null || jsonString.isEmpty()) {
             return null;
         }
+       // BRDialog.showSimpleDialog(mContext , "json" , jsonString);
         BaseWalletManager walletManager = WalletsMaster.getInstance().getWalletByIso(app, mCurrencyCode);
         if (walletManager == null) {
             String err = "createSweepingTx: wallet is null for: " + mCurrencyCode;
             BRReportsManager.reportBug(new NullPointerException(err));
             Log.e(TAG, err);
+        //    BRDialog.showSimpleDialog(mContext , "error" , "no wallet manager");
             return null;
         }
 
         BRCoreTransaction transaction = new BRCoreTransaction();
-        long totalAmount = 0;
+        double totalAmount = 0;
 
         try {
             JSONArray jsonArray = new JSONArray(jsonString);
@@ -259,23 +269,28 @@ public class ImportPrivKeyTask extends AsyncTask<String, String, String> {
                 byte[] txid = TypesConverter.hexToBytesReverse(obj.getString("txid"));
                 int vout = obj.getInt("vout");
                 byte[] scriptPubKey = TypesConverter.hexToBytes(obj.getString("scriptPubKey"));
-                long amount = obj.getLong("satoshis");
+                double amount = obj.getDouble("amount");
                 totalAmount += amount;
-                BRCoreTransactionInput in = new BRCoreTransactionInput(txid, vout, amount, scriptPubKey, new byte[]{}, new byte[]{}, -1);
+                BRCoreTransactionInput in = new BRCoreTransactionInput(txid, vout, (long) (amount * 100000000 ), scriptPubKey, new byte[]{}, new byte[]{}, -1);
                 transaction.addInput(in);
             }
 
             if (totalAmount <= 0) {
+               // BRDialog.showSimpleDialog(mContext , "error " , "empty amount");
                 return null;
             }
-
+            totalAmount  = totalAmount * 100000000;
             CryptoAddress address = walletManager.getReceiveAddress(app); //cast, assuming it's BTC or BCH for now
             BRCoreAddress coreAddr = (BRCoreAddress) address.getCoreObject(); //assume BTC and BCH for now
 
-            BigDecimal fee = walletManager.getFeeForTransactionSize(new BigDecimal(transaction.getSize() + 34 + (mKey.getPubKey().length - 33) * transaction.getInputs().length));
+            BigDecimal fee =   new BigDecimal( 10000000 );//walletManager.getFeeForTransactionSize(new BigDecimal(transaction.getSize() + 34 + (mKey.getPubKey().length - 33) * transaction.getInputs().length));
+
+
             transaction.addOutput(new BRCoreTransactionOutput(new BigDecimal(totalAmount).subtract(fee).longValue(), coreAddr.getPubKeyScript()));
             return new CryptoTransaction(transaction);
-        } catch (JSONException e) {
+        } catch (Exception e) {
+
+           // BRDialog.showSimpleDialog(mContext , "error " , e.getMessage());
             e.printStackTrace();
         }
         return null;

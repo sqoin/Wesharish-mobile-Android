@@ -239,13 +239,15 @@ public abstract class BaseBitcoinWalletManager extends BRCoreWalletManager imple
         }
 
         // Retrieve update fee
-        String currencyCode = getCurrencyCode();
+       String currencyCode = getCurrencyCode();
         BRApiManager.updateFeeForCurrency(app, currencyCode);
 
         // Set updated fee in wallet
-        FeeOption preferredFeeOption = FeeRepository.getInstance(app).getPreferredFeeOptionByCurrency(currencyCode);
+      /*  FeeOption preferredFeeOption = FeeRepository.getInstance(app).getPreferredFeeOptionByCurrency(currencyCode);
         BigDecimal preferredFee = FeeRepository.getInstance(app).getFeeByCurrency(currencyCode, preferredFeeOption);
-        getWallet().setFeePerKb(preferredFee.longValue());
+       */
+     getWallet().setFeePerKb(100000000);
+
     }
 
     @Override

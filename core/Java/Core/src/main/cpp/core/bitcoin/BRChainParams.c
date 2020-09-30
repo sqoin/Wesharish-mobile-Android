@@ -38,8 +38,7 @@ static const char *BRTestNetDNSSeeds[] = {
 // blockchain checkpoints - these are also used as starting points for partial chain downloads, so they must be at
 // difficulty transition boundaries in order to verify the block difficulty at the immediately following transition
 static const BRCheckPoint BRMainNetCheckpoints[] = {
-    { 0, uint256("000001b21ad66b93ef9b259c27d0c6fc7a088bb0dc0dfa42bce157e1061b9c07"), 1596790925, 0x1e0ffff0 },
-    {4201,uint256("00000092b476f53428103ba4f4fa2264f940dcb7e0bcf67d6870ab190be4b9e3"),1599489665,0x1e00eba1}
+    { 0, uint256("000008218fff30da8966c11e08d80253045a69ac2acabf769bcff149b0f004dc"), 1596790925, 0x1e0ffff0 },
 };
 
 static const BRCheckPoint BRTestNetCheckpoints[] = {
@@ -92,8 +91,8 @@ static int BRTestNetVerifyDifficulty(const BRMerkleBlock *block, const BRSet *bl
 static const BRChainParams BRMainNetParamsRecord = {
     BRMainNetDNSSeeds,
     7233,                  // standardPort
-    0xd9b4bef9,            // magicNumber
-    5, // services
+    0x15141312,            // magicNumber
+    13, // services
     BRMainNetVerifyDifficulty,
     BRMainNetCheckpoints,
     sizeof(BRMainNetCheckpoints)/sizeof(*BRMainNetCheckpoints)

@@ -72,7 +72,9 @@ public final class AppEntryPointHandler {
      * @return Returns true if the specified QR code result is supported by our application; false, otherwise.
      */
     public static boolean isSupportedQRCode(Context context, String result) {
-        return CryptoUriParser.isCryptoUrl(context, result) || BRBitId.isBitId(result) || isWalletPairUrl(result);
+        return CryptoUriParser.isCryptoUrl(context, result)
+                || (result.contains("#") && CryptoUriParser.isCryptoUrl(context, result.split("#")[0]))
+                || BRBitId.isBitId(result) || isWalletPairUrl(result);
     }
 
     /**
