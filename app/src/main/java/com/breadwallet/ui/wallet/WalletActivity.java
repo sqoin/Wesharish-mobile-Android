@@ -31,6 +31,7 @@ import com.breadwallet.R;
 import com.breadwallet.model.PriceDataPoint;
 import com.breadwallet.model.PriceChange;
 import com.breadwallet.presenter.activities.HomeActivity;
+import com.breadwallet.presenter.activities.settings.ImportActivity;
 import com.breadwallet.presenter.activities.util.BRActivity;
 import com.breadwallet.presenter.customviews.BRButton;
 import com.breadwallet.presenter.customviews.BRNotificationBar;
@@ -61,7 +62,7 @@ import com.breadwallet.wallet.wallets.bitcoin.BaseBitcoinWalletManager;
 import com.breadwallet.wallet.wallets.ethereum.WalletEthManager;
 import com.platform.HTTPServer;
 import com.platform.util.AppReviewPromptManager;
-
+import android.widget.Toast;
 import java.text.DateFormat;
 import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
@@ -118,6 +119,8 @@ public class WalletActivity extends BRActivity implements InternetManager.Connec
     private BRNotificationBar mNotificationBar;
     private BaseTextView mChartLabel;
 
+    private BRButton mRedeemButton;
+
     // interval buttons
     private List<BaseTextView> mIntervalButtons;
     private BaseTextView mOneDay;
@@ -130,6 +133,16 @@ public class WalletActivity extends BRActivity implements InternetManager.Connec
     private BaseTextView mCurrentlySelectedInterval;
 
     private SparkAdapter mPriceDataAdapter = new SparkAdapter();
+
+    public void displayMsg(String str){
+        Toast.makeText(this, "Bouton cliqué : " + str, Toast.LENGTH_SHORT).show();
+    }
+
+    public void openNewActivity(){
+        Intent intent = new Intent(this, ImportActivity.class);
+        startActivity(intent);
+    }
+
 
     /**
      * Start the wallet activity for the given currency.
@@ -175,6 +188,9 @@ public class WalletActivity extends BRActivity implements InternetManager.Connec
         mAppBar = findViewById(R.id.appbar);
         mNotificationBar = findViewById(R.id.notification_bar);
         mChartLabel = findViewById(R.id.chart_label);
+
+
+        mRedeemButton = findViewById(R.id.redeem_button);
 
        
 
@@ -262,6 +278,11 @@ public class WalletActivity extends BRActivity implements InternetManager.Connec
             finish();
         });
 
+
+        mRedeemButton.setOnClickListener(view -> {
+           // displayMsg("hani cliqué");
+            openNewActivity();
+        });
         searchIcon.setOnClickListener(view -> showSearchBar());
 
         mSellButton.setOnClickListener(view -> UiUtils.startPlatformBrowser(WalletActivity.this, HTTPServer.getPlatformUrl(HTTPServer.URL_SELL)));

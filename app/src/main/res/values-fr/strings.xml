@@ -155,6 +155,8 @@
     <!-- Button label to open Security Settings. -->
     <string name="Button.securitySettings.android">Centre de sécurité</string>
     <!-- Click this button to sell an asset -->
+
+    <string name="Button.redeem">Faire valoir une clé privée</string>
     <string name="Button.sell">Vendre</string>
     <!-- send button -->
     <string name="Button.send">envoyer</string>

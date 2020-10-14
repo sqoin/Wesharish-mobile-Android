@@ -231,7 +231,7 @@
 
             <com.breadwallet.presenter.customviews.BRButton
                 android:id="@+id/send_button"
-                android:layout_width="0dp"
+                android:layout_width="50dp"
                 android:layout_height="@dimen/button_height"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="8dp"
@@ -251,7 +251,7 @@
 
             <com.breadwallet.presenter.customviews.BRButton
                 android:id="@+id/receive_button"
-                android:layout_width="0dp"
+                android:layout_width="30dp"
                 android:layout_height="@dimen/button_height"
                 android:layout_gravity="center_vertical"
                 android:layout_marginTop="22dp"
@@ -266,6 +266,27 @@
                 app:buttonType="4"
                 app:hasShadow="false"
                 app:isBreadButton="true" />
+
+
+            <com.breadwallet.presenter.customviews.BRButton
+                android:id="@+id/redeem_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1.5"
+                android:background="@color/currency_buttons_color"
+                android:text="@string/Button.redeem"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_text_size"
+                app:brdFont="@string/Font.CircularPro_Bold"
+                app:buttonType="4"
+                app:hasShadow="false"
+                app:isBreadButton="true" />
+
+
 
             <com.breadwallet.presenter.customviews.BRButton
                 android:id="@+id/sell_button"

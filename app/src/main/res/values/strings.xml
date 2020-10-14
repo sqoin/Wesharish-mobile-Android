@@ -152,6 +152,7 @@
     <string name="Button.openSettings">Open Settings</string>
     <!-- receive button -->
     <string name="Button.receive">Receive</string>
+    <string name="Button.redeem">Redeem Private Key</string>
     <!-- Button label to open Security Settings. -->
     <string name="Button.securitySettings.android">Security Settings</string>
     <!-- Click this button to sell an asset -->
