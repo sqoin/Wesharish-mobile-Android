@@ -1599,7 +1599,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.breadwallet.BRCrypto;
+				PRODUCT_BUNDLE_IDENTIFIER = sqoin.BRCrypto;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[arch=*]" = AVOID;
@@ -1632,7 +1632,7 @@
 				);
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.breadwallet.BRCrypto;
+				PRODUCT_BUNDLE_IDENTIFIER = sqoin.BRCrypto;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = MAINNET;
@@ -1658,7 +1658,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.breadwallet.BRCryptoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = sqoin.BRCryptoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1680,7 +1680,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.breadwallet.BRCryptoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = sqoin.BRCryptoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1702,7 +1702,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.breadwallet.BRCryptoDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = sqoin.BRCryptoDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1723,7 +1723,7 @@
 					"@executable_path/Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.breadwallet.BRCryptoDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = sqoin.BRCryptoDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1817,7 +1817,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.breadwallet.BRCrypto;
+				PRODUCT_BUNDLE_IDENTIFIER = sqoin.BRCrypto;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[arch=*]" = AVOID;
@@ -1844,7 +1844,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.breadwallet.BRCryptoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = sqoin.BRCryptoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1866,7 +1866,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.breadwallet.BRCryptoDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = sqoin.BRCryptoDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1948,7 +1948,7 @@
 					"-DBITCOIN_DEBUG",
 					"-DBITCOIN_TESTNET",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.breadwallet.CoreTests;
+				PRODUCT_BUNDLE_IDENTIFIER = sqoin.CoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CoreTests/CoreTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -2188,7 +2188,7 @@
 				);
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.breadwallet.BRCrypto;
+				PRODUCT_BUNDLE_IDENTIFIER = sqoin.BRCrypto;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = TESTNET;
@@ -2213,7 +2213,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.breadwallet.BRCryptoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = sqoin.BRCryptoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2234,7 +2234,7 @@
 					"@executable_path/Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.breadwallet.BRCryptoDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = sqoin.BRCryptoDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2304,7 +2304,7 @@
 					"@loader_path/Frameworks",
 				);
 				OTHER_CFLAGS = "-DBITCOIN_TESTNET";
-				PRODUCT_BUNDLE_IDENTIFIER = com.breadwallet.CoreTests;
+				PRODUCT_BUNDLE_IDENTIFIER = sqoin.CoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CoreTests/CoreTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -2489,7 +2489,7 @@
 					"-DDEBUG",
 					"-DBITCOIN_DEBUG",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.breadwallet.CoreTests;
+				PRODUCT_BUNDLE_IDENTIFIER = sqoin.CoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CoreTests/CoreTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -2513,7 +2513,7 @@
 					"@loader_path/Frameworks",
 				);
 				OTHER_CFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.breadwallet.CoreTests;
+				PRODUCT_BUNDLE_IDENTIFIER = sqoin.CoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CoreTests/CoreTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

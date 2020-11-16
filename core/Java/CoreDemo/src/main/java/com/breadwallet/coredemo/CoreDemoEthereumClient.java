@@ -1,20 +1,20 @@
 /*
  * CoreDemoEthereumClient
  *
- * Created by Ed Gamble <ed@breadwallet.com> on 1/22/18.
+ * Created by Ed Gamble <ed@sqoin.com> on 1/22/18.
  * Copyright (c) 2018 Breadwinner AG.  All right reserved.
  *
  * See the LICENSE file at the project root for license information.
  * See the CONTRIBUTORS file at the project root for a list of contributors.
  */
-package com.breadwallet.coredemo;
+package us.sqoin.coredemo;
 
-import com.breadwallet.core.ethereum.BREthereumBlock;
-import com.breadwallet.core.ethereum.BREthereumEWM;
-import com.breadwallet.core.ethereum.BREthereumNetwork;
-import com.breadwallet.core.ethereum.BREthereumToken;
-import com.breadwallet.core.ethereum.BREthereumTransfer;
-import com.breadwallet.core.ethereum.BREthereumWallet;
+import us.sqoin.core.ethereum.BREthereumBlock;
+import us.sqoin.core.ethereum.BREthereumEWM;
+import us.sqoin.core.ethereum.BREthereumNetwork;
+import us.sqoin.core.ethereum.BREthereumToken;
+import us.sqoin.core.ethereum.BREthereumTransfer;
+import us.sqoin.core.ethereum.BREthereumWallet;
 
 import java.util.ArrayList;
 import java.util.HashMap;

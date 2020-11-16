@@ -6,7 +6,7 @@
     android:id="@+id/activity_intro_set_pit"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.breadwallet.presenter.activities.settings.DisplayCurrencyActivity">
+    tools:context="us.us.breadwallet.presenter.activities.settings.DisplayCurrencyActivity">
 
 
     <ImageButton
@@ -18,7 +18,7 @@
         android:layout_height="24dp" />
 
 
-    <com.breadwallet.presenter.customviews.BaseTextView
+    <us.us.breadwallet.presenter.customviews.BaseTextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,7 +32,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
-    <com.breadwallet.presenter.customviews.BaseTextView
+    <us.us.breadwallet.presenter.customviews.BaseTextView
         android:id="@+id/description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title"/>
 
-    <com.breadwallet.presenter.customviews.BaseTextView
+    <us.us.breadwallet.presenter.customviews.BaseTextView
         android:id="@+id/BRText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/BRText2">
 
-        <com.breadwallet.presenter.customviews.BRButton
+        <us.us.breadwallet.presenter.customviews.BRButton
             android:id="@+id/left_button"
             android:layout_width="match_parent"
             android:layout_height="30dp"
@@ -87,7 +87,7 @@
             app:isBreadButton="false"
             />
 
-        <com.breadwallet.presenter.customviews.BRButton
+        <us.us.breadwallet.presenter.customviews.BRButton
             android:id="@+id/right_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -101,7 +101,7 @@
             />
     </LinearLayout>
 
-    <com.breadwallet.presenter.customviews.BaseTextView
+    <us.us.breadwallet.presenter.customviews.BaseTextView
         android:id="@+id/exchange_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

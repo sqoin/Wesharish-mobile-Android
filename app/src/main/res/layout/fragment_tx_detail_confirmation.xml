@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/black_trans"
     android:clickable="true"
-    tools:context="com.breadwallet.ui.wallet.WalletActivity">
+    tools:context="us.us.breadwallet.ui.wallet.WalletActivity">
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/pin_dialog"
@@ -49,7 +49,7 @@
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.5" />
 
-        <com.breadwallet.presenter.customviews.BRButton
+        <us.us.breadwallet.presenter.customviews.BRButton
             android:id="@+id/cancel_btn"
             style="?android:attr/buttonBarNegativeButtonStyle"
             android:layout_width="0dp"
@@ -66,7 +66,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/total_cost_label" />
 
-        <com.breadwallet.presenter.customviews.BRButton
+        <us.us.breadwallet.presenter.customviews.BRButton
             android:id="@+id/ok_btn"
             style="?android:attr/buttonBarPositiveButtonStyle"
             android:layout_width="0dp"
@@ -83,7 +83,7 @@
             app:layout_constraintStart_toStartOf="@+id/guideline"
             app:layout_constraintTop_toBottomOf="@+id/total_cost_value" />
 
-        <com.breadwallet.presenter.customviews.BaseTextView
+        <us.us.breadwallet.presenter.customviews.BaseTextView
             android:id="@+id/amount_label"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -98,7 +98,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/processing_time_label" />
 
-        <com.breadwallet.presenter.customviews.BaseTextView
+        <us.us.breadwallet.presenter.customviews.BaseTextView
             android:id="@+id/amount_value"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -114,7 +114,7 @@
             app:layout_constraintStart_toStartOf="@+id/guideline"
             tools:text="874283.33" />
 
-        <com.breadwallet.presenter.customviews.BaseTextView
+        <us.us.breadwallet.presenter.customviews.BaseTextView
             android:id="@+id/network_fee_value"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -131,7 +131,7 @@
             tools:text="200.00" />
 
 
-        <com.breadwallet.presenter.customviews.BaseTextView
+        <us.us.breadwallet.presenter.customviews.BaseTextView
             android:id="@+id/total_cost_value"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -147,7 +147,7 @@
             app:layout_constraintStart_toEndOf="@+id/amount_label"
             tools:text="874483.33" />
 
-        <com.breadwallet.presenter.customviews.BaseTextView
+        <us.us.breadwallet.presenter.customviews.BaseTextView
             android:id="@+id/network_fee_label"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -162,7 +162,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/amount_label" />
 
-        <com.breadwallet.presenter.customviews.BaseTextView
+        <us.us.breadwallet.presenter.customviews.BaseTextView
             android:id="@+id/total_cost_label"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -177,7 +177,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/network_fee_label" />
 
-        <com.breadwallet.presenter.customviews.BaseTextView
+        <us.us.breadwallet.presenter.customviews.BaseTextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -190,7 +190,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.breadwallet.presenter.customviews.BaseTextView
+        <us.us.breadwallet.presenter.customviews.BaseTextView
             android:id="@+id/send_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -204,7 +204,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/separator6" />
 
-        <com.breadwallet.presenter.customviews.BaseTextView
+        <us.us.breadwallet.presenter.customviews.BaseTextView
             android:id="@+id/send_value"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -220,7 +220,7 @@
             app:layout_constraintTop_toBottomOf="@+id/send_label"
             tools:text="0.00105106 BTC ($10.00)" />
 
-        <com.breadwallet.presenter.customviews.BaseTextView
+        <us.us.breadwallet.presenter.customviews.BaseTextView
             android:id="@+id/to_address"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -236,7 +236,7 @@
             app:layout_constraintTop_toBottomOf="@+id/to_label"
             tools:text="1DrKYA2DTrVzfmXoriKwKFF8Chq1FKRYVm" />
 
-        <com.breadwallet.presenter.customviews.BaseTextView
+        <us.us.breadwallet.presenter.customviews.BaseTextView
             android:id="@+id/processing_time_label"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -252,7 +252,7 @@
             app:layout_constraintTop_toBottomOf="@+id/to_address"
             tools:text="Processing time: This transaction is predicted to complete in 10-30 minutes" />
 
-        <com.breadwallet.presenter.customviews.BaseTextView
+        <us.us.breadwallet.presenter.customviews.BaseTextView
             android:id="@+id/to_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -11,7 +11,7 @@
     tools:showIn="@layout/activity_wallet">
 
 
-    <com.breadwallet.presenter.customviews.BaseTextView
+    <us.us.breadwallet.presenter.customviews.BaseTextView
         android:id="@+id/currency_usd_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="$16,904.34" />
 
-    <com.breadwallet.ui.wallet.spark.SparkView
+    <us.sqoin.ui.wallet.spark.SparkView
         android:id="@+id/spark_line"
         android:layout_width="0dp"
         android:layout_height="80dp"
@@ -43,7 +43,7 @@
         app:spark_scrubLineWidth="1dp" />
 
 
-    <com.breadwallet.presenter.customviews.BaseTextView
+    <us.us.breadwallet.presenter.customviews.BaseTextView
         android:id="@+id/chart_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

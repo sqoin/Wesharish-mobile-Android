@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.breadwallet.presenter.customviews.BRNotificationBar
+    <us.us.breadwallet.presenter.customviews.BRNotificationBar
         android:id="@+id/notification_bar"
         android:layout_width="match_parent"
         android:layout_height="160dp"
@@ -22,7 +22,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.breadwallet.ui.wallet.BRSearchBar
+    <us.us.breadwallet.ui.wallet.BRSearchBar
         android:id="@+id/search_bar"
         android:layout_width="match_parent"
         android:layout_height="160dp"
@@ -62,7 +62,7 @@
             android:filterTouchesWhenObscured="true"
             android:focusableInTouchMode="true"
             android:orientation="vertical"
-            tools:context="com.breadwallet.ui.wallet.WalletActivity">
+            tools:context="us.us.breadwallet.ui.wallet.WalletActivity">
 
 
             <android.support.design.widget.AppBarLayout
@@ -114,7 +114,7 @@
                         app:layout_constraintRight_toLeftOf="@id/balance_primary"
                         app:layout_constraintTop_toTopOf="@+id/balance_label" />
 
-                    <com.breadwallet.presenter.customviews.BaseTextView
+                    <us.us.breadwallet.presenter.customviews.BaseTextView
                         android:id="@+id/balance_primary"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -126,7 +126,7 @@
                         app:layout_constraintTop_toTopOf="@+id/swap"
                         tools:text="$ 23493" />
 
-                    <com.breadwallet.presenter.customviews.BaseTextView
+                    <us.us.breadwallet.presenter.customviews.BaseTextView
                         android:id="@+id/balance_secondary"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -140,7 +140,7 @@
                         app:layout_constraintVertical_bias="0.5"
                         tools:text="1.56739" />
 
-                    <com.breadwallet.presenter.customviews.BaseTextView
+                    <us.us.breadwallet.presenter.customviews.BaseTextView
                         android:id="@+id/balance_label"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -229,7 +229,7 @@
             android:weightSum="3">
 
 
-            <com.breadwallet.presenter.customviews.BRButton
+            <us.us.breadwallet.presenter.customviews.BRButton
                 android:id="@+id/send_button"
                 android:layout_width="83dp"
                 android:layout_height="@dimen/button_height"
@@ -249,7 +249,7 @@
                 app:isBreadButton="true" />
 
 
-            <com.breadwallet.presenter.customviews.BRButton
+            <us.us.breadwallet.presenter.customviews.BRButton
                 android:id="@+id/receive_button"
                 android:layout_width="78dp"
                 android:layout_height="@dimen/button_height"
@@ -268,7 +268,7 @@
                 app:isBreadButton="true" />
 
 
-            <com.breadwallet.presenter.customviews.BRButton
+            <us.us.breadwallet.presenter.customviews.BRButton
                 android:id="@+id/redeem_button"
                 android:layout_width="141dp"
                 android:layout_height="@dimen/button_height"
@@ -288,7 +288,7 @@
 
 
 
-            <com.breadwallet.presenter.customviews.BRButton
+            <us.us.breadwallet.presenter.customviews.BRButton
                 android:id="@+id/sell_button"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/button_height"

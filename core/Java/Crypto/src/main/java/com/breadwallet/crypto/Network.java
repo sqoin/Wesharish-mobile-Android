@@ -1,14 +1,14 @@
 /*
  * Network
  *
- * Created by Ed Gamble <ed@breadwallet.com> on 1/22/18.
+ * Created by Ed Gamble <ed@sqoin.com> on 1/22/18.
  * Copyright (c) 2018 Breadwinner AG.  All right reserved.
  *
  * See the LICENSE file at the project root for license information.
  * See the CONTRIBUTORS file at the project root for a list of contributors.
  */
-package com.breadwallet.crypto;
-import com.breadwallet.crypto.ethereum.Ethereum;
+package us.sqoin.crypto;
+import us.sqoin.crypto.ethereum.Ethereum;
 
 public class Network {
     enum Type { Bitcoin, Bitcash, Ethereum }
@@ -65,6 +65,6 @@ public class Network {
 
     public Network (Ethereum ethereum) {
         this (Type.Ethereum, null, null, ethereum,
-                com.breadwallet.crypto.ethereum.Ethereum.currency);
+                us.sqoin.crypto.ethereum.Ethereum.currency);
     }
 }

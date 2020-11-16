@@ -1,19 +1,19 @@
 /*
  * Transfer
  *
- * Created by Ed Gamble <ed@breadwallet.com> on 1/22/18.
+ * Created by Ed Gamble <ed@sqoin.com> on 1/22/18.
  * Copyright (c) 2018 Breadwinner AG.  All right reserved.
  *
  * See the LICENSE file at the project root for license information.
  * See the CONTRIBUTORS file at the project root for a list of contributors.
  */
-package com.breadwallet.crypto.ethereum;
+package us.sqoin.crypto.ethereum;
 
-import com.breadwallet.crypto.Address;
-import com.breadwallet.crypto.Amount;
-import com.breadwallet.crypto.Wallet;
+import us.sqoin.crypto.Address;
+import us.sqoin.crypto.Amount;
+import us.sqoin.crypto.Wallet;
 
-class Transfer extends com.breadwallet.crypto.Transfer {
+class Transfer extends us.sqoin.crypto.Transfer {
     long core;
 
     private Transfer(long core, Wallet wallet, Address source, Address target, Amount amount, Amount fee) {

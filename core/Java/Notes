@@ -91,7 +91,7 @@ CLASSPATH=${PROJECT_DIR}/build/intermediates/classes/debug/
 
 (cd ~/Bread/CoreJNI/app/build/intermediates/classes/debug/com/breadwallet/core; \
  for class in BRCore*.class; \
-   do javah -jni -d ${JNI_DIR} -classpath ${CLASSPATH} com.breadwallet.core.${class%%.class}; \
+   do javah -jni -d ${JNI_DIR} -classpath ${CLASSPATH} sqoin.core.${class%%.class}; \
    done)
    
 # Some headers will be generated that are empty - particularly for private interfaces/class.

@@ -9,7 +9,7 @@
     android:paddingBottom="8dp"
     android:visibility="gone">
 
-    <com.breadwallet.presenter.customviews.BaseTextView
+    <us.us.breadwallet.presenter.customviews.BaseTextView
         android:id="@+id/add_wallets"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -1,13 +1,13 @@
 /*
  * CoreDemoExampleInstrumentedTest
  *
- * Created by Ed Gamble <ed@breadwallet.com> on 1/22/18.
+ * Created by Ed Gamble <ed@sqoin.com> on 1/22/18.
  * Copyright (c) 2018 Breadwinner AG.  All right reserved.
  *
  * See the LICENSE file at the project root for license information.
  * See the CONTRIBUTORS file at the project root for a list of contributors.
  */
-package com.breadwallet.coredemo;
+package us.sqoin.coredemo;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -30,7 +30,7 @@ public class CoreDemoExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.breadwallet.coredemo", appContext.getPackageName());
+        assertEquals("us.sqoin.coredemo", appContext.getPackageName());
         assertTrue(false);
     }
 }

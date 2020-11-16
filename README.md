@@ -1,7 +1,7 @@
 ![ƀ](/images/icon.png) Wesharish-wallet for Android
 ----------------------------------
 
-[![Get it on Google Play](/images/icon-google-play.png)](https://play.google.com/store/apps/details?id=com.breadwallet)
+[![Get it on Google Play](/images/icon-google-play.png)](https://play.google.com/store/apps/details?id=sqoin)
 
 ### bitcoin done right
 

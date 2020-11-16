@@ -12,7 +12,7 @@
     android:padding="8dp"
     app:cardCornerRadius="4dp">
 
-    <com.breadwallet.presenter.customviews.BaseTextView
+    <us.us.breadwallet.presenter.customviews.BaseTextView
         android:id="@+id/prompt_description"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
         app:layout_constraintStart_toStartOf="@+id/prompt_title"
         app:layout_constraintTop_toBottomOf="@+id/prompt_title" />
 
-    <com.breadwallet.presenter.customviews.BaseTextView
+    <us.us.breadwallet.presenter.customviews.BaseTextView
         android:id="@+id/prompt_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
-    <com.breadwallet.presenter.customviews.BRButton
+    <us.us.breadwallet.presenter.customviews.BRButton
         android:id="@+id/continue_button"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"

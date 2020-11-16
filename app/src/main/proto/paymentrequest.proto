@@ -7,7 +7,7 @@
 //
 
 package payments;
-option java_package = "com.breadwallet.protocols.paymentrequest";
+option java_package = "sqoin.protocols.paymentrequest";
 option java_outer_classname = "Protos";
 
 // Generalized form of "send payment to this/these bitcoin addresses"

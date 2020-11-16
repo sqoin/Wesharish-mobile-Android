@@ -24,7 +24,7 @@ android {
     }
     defaultConfig {
         testInstrumentationRunner = 'android.support.test.runner.AndroidJUnitRunner'
-        applicationId = 'com.breadwallet'
+        applicationId = 'us.sqoin'
         minSdkVersion 23
         targetSdkVersion 28
 
@@ -58,7 +58,7 @@ android {
     flavorDimensions "mode"
     productFlavors {
         brd {
-            applicationId = "com.breadwallet"
+            applicationId = "us.sqoin"
             dimension "mode"
             resValue "string", "app_name", "WeSharishCoin"
             buildConfigField "boolean", "BITCOIN_TESTNET", "false"
@@ -66,7 +66,7 @@ android {
             missingDimensionStrategy 'network', 'onMainnet'
         }
         brdTestnet {
-            applicationId = "com.breadwallet.testnet"
+            applicationId = "us.sqoin.testnet"
             dimension "mode"
             resValue "string", "app_name", "BRD Testnet"
             buildConfigField "boolean", "BITCOIN_TESTNET", "true"
@@ -132,8 +132,8 @@ android {
 task downloadBundles {
     doLast {
         def bundles = ["brd-web-3", "brd-tokens-prod", "brd-web-3-staging", "brd-tokens-staging"]
-        def stagingHost = "api.breadwallet.com"
-        def releaseHost = "stage2.breadwallet.com"
+        def stagingHost = "api.sqoin.com"
+        def releaseHost = "stage2.sqoin.com"
         for (String bundleName : bundles) {
             def fileUrl
             def resFolder

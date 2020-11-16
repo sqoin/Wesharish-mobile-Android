@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.breadwallet.presenter.customviews.BaseTextView
+    <us.us.breadwallet.presenter.customviews.BaseTextView
         android:id="@+id/currency_item_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -164,12 +164,12 @@ compile: $(JNI_LIB) java_comp
 
 test: $(JNI_LIB) java_comp
 	java -Xss1m -Dwallet.test -classpath build -Djava.library.path=. \
-		 com.breadwallet.core.BRWalletManager $(ARGS) # -D.
+		 sqoin.core.BRWalletManager $(ARGS) # -D.
 
 debug: $(JNI_LIB) java_comp
 	java -Xss1m -Xdebug -Xrunjdwp:transport=dt_socket,address=8008,server=y,suspend=n \
 		 -Dwallet.test -classpath build -Djava.library.path=. \
-		 com.breadwallet.core.BRWalletManager $(ARGS) # -D.
+		 sqoin.core.BRWalletManager $(ARGS) # -D.
 
 $(JNI_LIB): $(JNI_OBJS) $(CORE_OBJS) $(ETH_OBJS)
 	cc -dynamiclib -lresolv -o $@ $?
@@ -183,7 +183,7 @@ jni_hdr_core: 	FORCE
 	@echo Core JNI Headers
 	@(cd build/com/breadwallet/core; \
 	  for class in BRCore*.class; do \
-	      javah -jni -d $(DIR)/$(JNI_SDIR) -classpath $(DIR)/build com.breadwallet.core.$${class%%.class}; \
+	      javah -jni -d $(DIR)/$(JNI_SDIR) -classpath $(DIR)/build sqoin.core.$${class%%.class}; \
 	  done)
 	@(cd $(JNI_SDIR); \
 	  rm -f .h com_breadwallet_core_BRCoreWalletManager.h com_breadwallet_core_BRCore*_*.h)
@@ -192,7 +192,7 @@ jni_hdr_eth: 	FORCE
 	@echo Ethereum JNI Headers
 	@(cd build/com/breadwallet/core/ethereum; \
 	  for class in BREthereum*.class; do \
-	      javah -jni -d $(DIR)/$(JNI_SDIR)/ethereum -classpath $(DIR)/build com.breadwallet.core.ethereum.$${class%%.class}; \
+	      javah -jni -d $(DIR)/$(JNI_SDIR)/ethereum -classpath $(DIR)/build sqoin.core.ethereum.$${class%%.class}; \
 	  done)
 	@(cd $(JNI_SDIR)/ethereum; \
 	  rm -f .h com_breadwallet_core_ethereum_BREthereum*_*.h)
@@ -222,6 +222,6 @@ FORCE:
 # (cd ${APP}/app/build/intermediates/classes/debug/com/breadwallet/core; for class in BRCore*.class; do \
 #     javah -jni -d ${APP}/app/src/main/cpp/breadwallet-core/Java/ \
 #	-classpath ${APP}/app/build/intermediates/classes/debug/ \
-#	com.breadwallet.core.${class%%.class}; \
+#	sqoin.core.${class%%.class}; \
 #	done)
 # 15RBcXQMTfebbAfUFeBbcDfs1fVvPayWdU

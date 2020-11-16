@@ -5,7 +5,7 @@ xmlns:tools="http://schemas.android.com/tools"
 android:id="@+id/activity_intro_set_pit"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-tools:context="com.breadwallet.presenter.activities.settings.AboutActivity">
+tools:context="us.us.breadwallet.presenter.activities.settings.AboutActivity">
 
 
 <ImageButton
@@ -19,7 +19,7 @@ tools:context="com.breadwallet.presenter.activities.settings.AboutActivity">
     tools:layout_editor_absoluteY="16dp" />
 
 
-<!-- <com.breadwallet.presenter.customviews.BaseTextView
+<!-- <sqoinnter.customviews.BaseTextView
      android:id="@+id/brd_rewards"
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
@@ -30,7 +30,7 @@ tools:context="com.breadwallet.presenter.activities.settings.AboutActivity">
      app:layout_constraintLeft_toLeftOf="@id/divider4" />
      -->
 
-    <com.breadwallet.presenter.customviews.BaseTextView
+    <us.us.breadwallet.presenter.customviews.BaseTextView
         android:id="@+id/brd_rewards_id"
         android:layout_width="9dp"
         android:layout_height="16dp"
@@ -53,7 +53,7 @@ tools:context="com.breadwallet.presenter.activities.settings.AboutActivity">
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintRight_toRightOf="parent" />
 
-<!--<com.breadwallet.presenter.customviews.BaseTextView
+<!--<sqoinnter.customviews.BaseTextView
     android:id="@+id/brd_copy"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -65,7 +65,7 @@ tools:context="com.breadwallet.presenter.activities.settings.AboutActivity">
     app:layout_constraintTop_toBottomOf="@+id/brd_rewards" />
 -->
 
-<com.breadwallet.presenter.customviews.BaseTextView
+<us.us.breadwallet.presenter.customviews.BaseTextView
     android:id="@+id/title"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -121,7 +121,7 @@ tools:context="com.breadwallet.presenter.activities.settings.AboutActivity">
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintRight_toRightOf="parent" />
 
-<com.breadwallet.presenter.customviews.BaseTextView
+<us.us.breadwallet.presenter.customviews.BaseTextView
     android:id="@+id/textView22"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -131,7 +131,7 @@ tools:context="com.breadwallet.presenter.activities.settings.AboutActivity">
     app:layout_constraintBottom_toTopOf="@+id/view4"
     app:layout_constraintLeft_toLeftOf="@+id/divider1" />
 
-<com.breadwallet.presenter.customviews.BaseTextView
+<us.us.breadwallet.presenter.customviews.BaseTextView
     android:id="@+id/textView24"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -163,7 +163,7 @@ tools:context="com.breadwallet.presenter.activities.settings.AboutActivity">
     app:layout_constraintRight_toRightOf="@+id/view5"
     app:layout_constraintTop_toTopOf="@+id/textView24" />
 
-<com.breadwallet.presenter.customviews.BaseTextView
+<us.us.breadwallet.presenter.customviews.BaseTextView
     android:id="@+id/policy_text"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -180,7 +180,7 @@ tools:context="com.breadwallet.presenter.activities.settings.AboutActivity">
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintRight_toRightOf="parent" />
 
-<com.breadwallet.presenter.customviews.BaseTextView
+<us.us.breadwallet.presenter.customviews.BaseTextView
     android:id="@+id/info_text"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -194,7 +194,7 @@ tools:context="com.breadwallet.presenter.activities.settings.AboutActivity">
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintRight_toRightOf="parent" />
 
-<com.breadwallet.presenter.customviews.BaseTextView
+<us.us.breadwallet.presenter.customviews.BaseTextView
     android:id="@+id/textView21"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"

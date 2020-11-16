@@ -3,7 +3,7 @@ syntax = "proto2";
 // VERSION: 1.0
 
 package messages;
-option java_package = "com.breadwallet.protocols.messageexchange";
+option java_package = "sqoin.protocols.messageexchange";
 option java_outer_classname = "Protos";
 
 //

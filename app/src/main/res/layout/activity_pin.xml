@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.breadwallet.presenter.customviews.BRLockScreenConstraintLayout
+<us.us.breadwallet.presenter.customviews.BRLockScreenConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_pit"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.breadwallet.presenter.activities.LoginActivity">
+    tools:context="us.us.breadwallet.presenter.activities.LoginActivity">
 
 
-    <com.breadwallet.presenter.customviews.BaseTextView
+    <us.us.breadwallet.presenter.customviews.BaseTextView
         android:id="@+id/scan"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,7 +44,7 @@
 
 
 
-    <com.breadwallet.presenter.customviews.PinLayout
+    <us.us.breadwallet.presenter.customviews.PinLayout
         android:id="@+id/pin_digits"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -58,9 +58,9 @@
         app:layout_constraintTop_toBottomOf="@+id/title"
         app:layout_constraintVertical_bias="0.75">
 
-    </com.breadwallet.presenter.customviews.PinLayout>
+    </us.us.breadwallet.presenter.customviews.PinLayout>
 
-    <com.breadwallet.presenter.customviews.BRKeyboard
+    <us.us.breadwallet.presenter.customviews.BRKeyboard
         android:id="@+id/brkeyboard"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -86,7 +86,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <com.breadwallet.presenter.customviews.BRButton
+        <us.us.breadwallet.presenter.customviews.BRButton
             android:id="@+id/left_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -101,7 +101,7 @@
             app:isBreadButton="false"
             />
 
-        <com.breadwallet.presenter.customviews.BRButton
+        <us.us.breadwallet.presenter.customviews.BRButton
             android:id="@+id/right_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -142,4 +142,4 @@
         app:layout_constraintBottom_toBottomOf="@+id/brkeyboard"
         app:layout_constraintRight_toRightOf="parent"/>
 
-</com.breadwallet.presenter.customviews.BRLockScreenConstraintLayout>
+</us.us.breadwallet.presenter.customviews.BRLockScreenConstraintLayout>

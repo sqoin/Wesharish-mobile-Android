@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.breadwallet">
+    package="us.sqoin">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -40,7 +40,7 @@
         android:required="false" />
 
     <application
-        android:name=".BreadApp"
+        android:name="us.us.breadwallet.BreadApp"
         android:allowBackup="false"
         android:fullBackupContent="false"
         android:icon="${applicationIcon}"
@@ -76,93 +76,93 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".presenter.activities.intro.IntroActivity"
+            android:name="us.us.breadwallet.presenter.activities.intro.IntroActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".ui.wallet.WalletActivity"
+            android:name="us.us.breadwallet.ui.wallet.WalletActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan"/>
         <activity
-            android:name=".presenter.activities.BrdWalletActivity"
+            android:name="us.us.breadwallet.presenter.activities.BrdWalletActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan"/>
         <activity
-            android:name=".presenter.activities.InputPinActivity"
+            android:name="us.us.breadwallet.presenter.activities.InputPinActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".presenter.activities.intro.RecoverActivity"
+            android:name="us.us.breadwallet.presenter.activities.intro.RecoverActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presenter.activities.settings.UnlinkActivity"
+            android:name="us.us.breadwallet.presenter.activities.settings.UnlinkActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presenter.activities.settings.ImportActivity"
+            android:name="us.us.breadwallet.presenter.activities.settings.ImportActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presenter.activities.LoginActivity"
+            android:name="us.us.breadwallet.presenter.activities.LoginActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presenter.activities.settings.SettingsActivity"
+            android:name="us.us.breadwallet.presenter.activities.settings.SettingsActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.pricealert.SelectForCurrencyActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presenter.activities.settings.SyncBlockchainActivity"
+            android:name="us.us.breadwallet.presenter.activities.settings.SyncBlockchainActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presenter.activities.settings.DisplayCurrencyActivity"
+            android:name="us.us.breadwallet.presenter.activities.settings.DisplayCurrencyActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presenter.activities.settings.AboutActivity"
+            android:name="us.us.breadwallet.presenter.activities.settings.AboutActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presenter.activities.settings.ShareDataActivity"
+            android:name="us.us.breadwallet.presenter.activities.settings.ShareDataActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presenter.activities.intro.WriteDownActivity"
+            android:name="us.us.breadwallet.presenter.activities.intro.WriteDownActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presenter.activities.PaperKeyActivity"
+            android:name="us.us.breadwallet.presenter.activities.PaperKeyActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presenter.activities.settings.SpendLimitActivity"
+            android:name="us.us.breadwallet.presenter.activities.settings.SpendLimitActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presenter.activities.settings.SegWitActivity"
+            android:name="us.us.breadwallet.presenter.activities.settings.SegWitActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presenter.activities.PaperKeyProveActivity"
+            android:name="us.us.breadwallet.presenter.activities.PaperKeyProveActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.recovery.RecoveryKeyActivity"
+            android:name="us.us.breadwallet.ui.recovery.RecoveryKeyActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presenter.activities.camera.ScanQRActivity"
+            android:name="us.us.breadwallet.presenter.activities.camera.ScanQRActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <!-- Use launchMode="standard for WebViewActivity in order to be able to have multiple instances" -->
@@ -179,31 +179,31 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".presenter.activities.DisabledActivity"
+            android:name="us.us.breadwallet.presenter.activities.DisabledActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presenter.activities.settings.FingerprintActivity"
+            android:name="us.us.breadwallet.presenter.activities.settings.FingerprintActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presenter.activities.settings.AdvancedActivity"
+            android:name="us.us.breadwallet.presenter.activities.settings.AdvancedActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presenter.activities.settings.NodesActivity"
+            android:name="us.us.breadwallet.presenter.activities.settings.NodesActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presenter.activities.camera.CameraActivity"
+            android:name="us.us.breadwallet.presenter.activities.camera.CameraActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presenter.activities.settings.TestActivity"
+            android:name="us.us.breadwallet.presenter.activities.settings.TestActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presenter.activities.HomeActivity"
+            android:name="us.us.breadwallet.presenter.activities.HomeActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -298,27 +298,27 @@
 
         </activity>
         <activity
-            android:name=".presenter.activities.CurrencySettingsActivity"
+            android:name="us.us.breadwallet.presenter.activities.CurrencySettingsActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presenter.activities.AddWalletsActivity"
+            android:name="us.us.breadwallet.presenter.activities.AddWalletsActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".presenter.activities.ManageWalletsActivity"
+            android:name="us.us.breadwallet.presenter.activities.ManageWalletsActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presenter.activities.ConfirmationActivity"
+            android:name="us.us.breadwallet.presenter.activities.ConfirmationActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".presenter.activities.intro.OnBoardingActivity"
+            android:name="us.us.breadwallet.presenter.activities.intro.OnBoardingActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
-        <activity android:name=".view.dialog.DialogActivity"
+        <activity android:name="us.us.breadwallet.view.dialog.DialogActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"/>
         <activity android:name=".ui.notification.InAppNotificationActivity"
@@ -329,7 +329,7 @@
             android:screenOrientation="portrait" />
 
         <service
-            android:name=".protocols.messageexchange.MessageExchangeService"
+            android:name="us.us.breadwallet.protocols.messageexchange.MessageExchangeService"
             android:enabled="true"
             android:exported="false"
             android:permission="android.permission.BIND_JOB_SERVICE" />

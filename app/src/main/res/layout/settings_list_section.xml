@@ -7,7 +7,7 @@
     android:filterTouchesWhenObscured="true"
     android:orientation="horizontal">
 
-    <com.breadwallet.presenter.customviews.BaseTextView
+    <us.us.breadwallet.presenter.customviews.BaseTextView
         android:id="@+id/item_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

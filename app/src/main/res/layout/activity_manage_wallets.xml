@@ -19,7 +19,7 @@
                 android:layout_height="wrap_content"
                 android:background="?attr/toolbar_back_arrow" />
 
-            <com.breadwallet.presenter.customviews.BaseTextView
+            <us.us.breadwallet.presenter.customviews.BaseTextView
                 android:id="@+id/add_wallets_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
